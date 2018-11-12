@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <nav>
+        <a class="navButtons" href="index.html">Home</a>
+        <div class="navDD">
+            <a class="navButtons" href="ab.html">Stuff to do</a>
+            <div class="nav-content">
+                <div class="dd-nav"><a href="link">Skiing</a></div>
+                <div class="dd-nav"><a href="link">Camping</a></div>
+                <div class="dd-nav"><a href="link">Zipline</a></div>
+                <div class="dd-nav"><a href="link">Snowboarding</a></div>
+                <div class="dd-nav"><a href="link">Swimming</a></div>
+
+
+            </div>
+
+        </div>
+
+        <div class="navDD">
+            <a class="navButtons" href="ab.html">Food</a>
+            <div class="nav-content">
+                <div class="dd-nav"><a href="link">Fish</a></div>
+                <div class="dd-nav"><a href="link">Food</a></div>
+                <div class="dd-nav"><a href="link">More Food</a></div>
+                <div class="dd-nav"><a href="link">Good Food</a></div>
+                <div class="dd-nav"><a href="link">Bad Food</a></div>
+
+
+            </div>
+        </div>
+
+            <a class="navButtons" href="contact.html">Contact information</a>
+            <a class="navButtons" href="book.html">Book</a>
+
+
+    </nav>
+
+    <div class="container">
+        <header>Book your visit</header>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <div class="names">
+                    <label for="fname">
+                        <span style="position:relative; left:-18px;">Name:</span>
+                        <input autofocus type="text" name="fname" id="fname" required placeholder="First Name" />
+                    </label>
+                    <label for="lname">
+                        <span style="position: relative; left:-50px;">Last Name:</span>
+                        <input type="text" name="lname" id="lname" required placeholder="Last Name" />
+                    </label>
+                    <label for="email">
+                        <span style="position: relative; left:-20px;">Email:</span>
+                        <input type="email" name="email" id="email" required placeholder="yourEmail@example.com" />
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Reservation Request
+                </legend>
+                <select name="teachernames">
+                    <option value="kirstenmarkley">Crater Lake</option>
+                    <option value="tiffanyford">Somewhere</option>
+                    <option value="rileyrenee">Somewhere</option>
+                </select>
+                <select date="date">
+                    <option value="jan">January</option>
+                    <option value="feb">Febuary</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+
+                <input type="number" name="dayofmonth" min="1" max="31" value="1">
+                <input type="radio" name="time" value="am" required>AM
+                <input type="radio" name="time" value="pm" required>PM
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Activities you'd like to do
+
+                </legend>
+                <div style="color:white; font-weight:bold;">
+                    <input type="radio" name="java" value="java">Camping
+                    <input type="radio" name="csharp" value="csharp">Skiing
+                    <input type="radio" name="webdev" value="webdev">Snowboarding
+                    <input type="radio" name="database" value="database">Swimming
+                    <input type="radio" name="systemsanalysisanddseign" value="systemsanalysisanddseign">Zipline
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Additional Info
+                </legend>
+                <textarea style="resize: none;" name="additionalinfo" cols="60" rows="5" placeholder="Any additional info"></textarea>
+            </fieldset>
+            <input class="submit" type="submit" value="Submit" />
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

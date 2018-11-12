@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="color:white" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <title></title>
+</head>
+
+<body style="text-align: center;">
+    <nav>
+        <a class="navButtons" href="index.html">Home</a>
+        <div class="navDD">
+            <a class="navButtons" href="ab.html">Stuff to do</a>
+            <div class="nav-content">
+                <div class="dd-nav"><a href="link">Skiing</a></div>
+                <div class="dd-nav"><a href="link">Camping</a></div>
+                <div class="dd-nav"><a href="link">Zipline</a></div>
+                <div class="dd-nav"><a href="link">Snowboarding</a></div>
+                <div class="dd-nav"><a href="link">Swimming</a></div>
+
+
+            </div>
+
+        </div>
+
+        <div class="navDD">
+            <a class="navButtons" href="ab.html">Food</a>
+            <div class="nav-content">
+                <div class="dd-nav"><a href="link">Fish</a></div>
+                <div class="dd-nav"><a href="link">Food</a></div>
+                <div class="dd-nav"><a href="link">More Food</a></div>
+                <div class="dd-nav"><a href="link">Good Food</a></div>
+                <div class="dd-nav"><a href="link">Bad Food</a></div>
+
+
+            </div>
+
+        </div>
+        <a class="navButtons" href="contact.html">Contact information</a>
+        <a class="navButtons" href="book.html">Book</a>
+
+    </nav>
+  <div id="container">
+   
+    <header>Thank you for booking a visit. We will contact you via e-mail with your scheduele!</header>
+
+    <script>
+      printQuery();
+    </script>
+  </div>
+</body>
+
+</html>
