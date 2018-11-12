@@ -47,6 +47,7 @@ body
     background-image: url(images/headerpic.jpg);
     background-size: cover;
     background-attachment: fixed;
+    margin: 0px;
 }
 .bodyImg
 {
@@ -82,15 +83,11 @@ body
 /*Nav Styling */
 nav
 {
-    
-    border-top: 3px rgb(0, 0, 0) solid;
     background-color:rgba(0, 0, 0, 0.5);
     width:100%;
-    height:58px;
-    top:0;
-    margin: 0 0 12px 0;
+    height: 64px;
+    top: 0px;
     position: fixed;
-    background-attachment: fixed;
     z-index: 1;
     text-align: center;
 }
@@ -100,16 +97,32 @@ nav a:hover
     background-color: rgba(0, 0, 0, 0.5)
 }
 
+
 .navButtons
 {
-    margin-right:2px;
-    padding: 14px 16px;
+    padding: 20px;
     color:white;
     font-weight: bold;
-    
-    
+    right: -8%;
 }
 
+.navIcons {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  color: white;
+  padding: 30px;
+  position: relative;
+  top: 10px;
+  font-size: 40px;
+}
+
+.navIcons:hover {
+  color:rgba(8, 216, 8, 1);
+}
+
+.iconContainer {
+  float: right;
+}
 
 nav a:hover
 {
