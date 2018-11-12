@@ -1,3 +1,4 @@
+
 /*Basic Layout*/
 header, #container
 {
@@ -75,8 +76,7 @@ body
 {
     width: 850px;
     height: 450px;
-    position: relative;
-    left:7%
+
 }
 
 /*Nav Styling */
@@ -231,7 +231,7 @@ nav a
 }
 */
 
-/*Fixed signup box
+/*Fixed signup box*/
 .signUp
 {
     position: fixed;
@@ -244,8 +244,9 @@ nav a
     font-size: 1.5em;
     color:black;
     border: 5px black double;
+    display:none;
 }
-
+.signUp:hover{display:block;}
 .signUp p, a
 {
     position: relative;
@@ -293,7 +294,7 @@ nav a
 {
     color:white;
 }
-*/
+
 
 /*Booking styles*/
 .names label
@@ -324,8 +325,12 @@ footer
 {
     
     text-align: center;
+    background-color: black;
     
     color:white;
+    position: absolute;
+    width:100%
+    
     
 }
 footer p{margin-top:20px;background-color: black;}
@@ -355,3 +360,4 @@ footer p{margin-top:20px;background-color: black;}
 /*.contact{display:flex}*/
 
 .contactImg{width:200px;height:150px;float:left;}
+
