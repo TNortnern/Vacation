@@ -6,20 +6,23 @@ header, #container
     border: 5px gray groove;
     width:80%;
     position:relative;
-    left:10%;
+    margin: auto;
     color:white;
     text-shadow: 2px 2px black;
     padding: 12px 6px 12px 6px;
+	border:none;
 }
 header
 {
     font-size: 2.3em;
-    margin-bottom: 20px;
-    margin-top:70px;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 20px;
     text-align:center;
     font-weight:bold;
-    background-color:initial;
-    border:none;
+    background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	width: 80%;
 }
 
 #container
@@ -321,48 +324,55 @@ nav a
 }
 .names input{position:absolute; left:18%; width:75%;}
 
-fieldset
-{
+fieldset {
   margin-bottom: 10px;
+  color:white; 
+  font-weight: bold;
 }
-
 
 .submit {width:initial; position:initial }
 
-fieldset {color:white; font-weight: bold}
+form {
+	background-color:rgba(0, 0, 0, 0.5);
+	width: 80%;
+	margin: auto;
+}
 
+textarea {
+	width: 100%;
+}
 
-form{background-color:rgba(0, 0, 0, 0.5)}
 /* Footer styling*/
 footer
 {
-    
     text-align: center;
     background-color: black;
-    
     color:white;
     position: absolute;
     width:100%
-    
-    
 }
 footer p{margin-top:20px;background-color: black;}
+
+footer div a {
+	color: gray;
+	text-decoration: none;
+    margin:10px;
+    font-weight: bold;
+	padding: 10px;
+}
+
+footer div a:hover {
+	color: white;
+}
 
 .bottomFlex
 {
     margin: 5px;
     display:flex;
-    justify-content: center;background-color: black;
+    justify-content: center;
+	background-color: black;
     
    
-}
-
-.botbox1, .botbox2, .botbox3, .botbox4
-{
-    height:20px;
-    width:10%;
-    margin-right:20px;
-    font-weight: bold;
 }
 
 .botbox1{background-color:orange;}
