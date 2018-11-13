@@ -55,19 +55,27 @@ body
 .bodyImg
 {
     height: 400px;
-    width: auto;
+    width: 450px;
     margin: 30px 0 20px 0;
+    border: 5px black groove;
 }
 
 .bodyT
 {
     font-size: 1.6em;
+    text-align: center
 }
 
 .bodyD
 {
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: center
+}
+
+.bodyD a
+{
+    color:white;
+    font-weight: bold;
 }
 
 .pText
@@ -217,8 +225,15 @@ nav a
 {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    margin-top: 40px;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.cc2
+{
+    display: column;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
 }
 /*Google Map
 .map
@@ -370,11 +385,14 @@ footer div a:hover {
     margin: 5px;
     display:flex;
     justify-content: center;
-	background-color: black;
+    background-color: black;
     
    
 }
-
+.botbox1,.botbox2,.botbox3
+{
+    color:white
+}
 .botbox1{background-color:orange;}
 .botbox2{background-color:rgba(71, 71, 71, 0.8)}
 .botbox3{background-color:blue}
@@ -384,3 +402,18 @@ footer div a:hover {
 
 .contactImg{width:200px;height:150px;float:left;}
 
+.botbox1:hover{color:rgba(8, 216, 8, 1)}
+
+.botbox2:hover{color:rgba(8, 216, 8, 1)}
+
+.botbox3:hover{color:rgba(8, 216, 8, 1)}
+
+@media screen and (max-width:1245px)
+{
+    .cc,.cc2{flex-direction: column;justify-content: center}
+    .bodyT{position:relative;z-index:1;top:298px;opacity: .8;font-weight: bold;}
+}
+
+
+@media screen and (max-width: 800px)
+{}
